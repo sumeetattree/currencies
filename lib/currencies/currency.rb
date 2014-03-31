@@ -3,10 +3,10 @@ end
 
 class ISO4217::Currency
   class << self
-    attr_accessor :currencies
-    attr_accessor :base_currency
-    attr_accessor :major_codes
-    attr_accessor :import_exchange_rates
+    cattr_accessor :currencies
+    cattr_accessor :base_currency
+    cattr_accessor :major_codes
+    cattr_accessor :import_exchange_rates
   end
 
   attr_reader :code, :symbol, :name, :full_name, :exchange_currency
